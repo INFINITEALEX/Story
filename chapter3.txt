@@ -120,3 +120,23 @@ To https://github.com/INFINITEALEX/Story.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
 PS C:\Users\VIKRAM N REDDY\Desktop\Story>
+
+ git add .
+
+VIKRAM N REDDY@VNR MINGW64 ~/Desktop/Story (main)
+$ git commit -m "chapter3"
+[main 64ad031] chapter3
+ 1 file changed, 122 insertions(+), 1 deletion(-)
+
+VIKRAM N REDDY@VNR MINGW64 ~/Desktop/Story (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.39 KiB | 712.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/INFINITEALEX/Story.git
+   2e156f5..64ad031  main -> main
+branch 'main' set up to track 'origin/main'.
