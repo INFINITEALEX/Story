@@ -4,3 +4,139 @@ PS C:\Users\VIKRAM N REDDY\Desktop\Story> ls
 
     Directory: C:\Users\VIKRAM N REDDY\Desktop\Story
 
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         2/12/2024   5:13 PM             15 chapter1.txt
+
+
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git add .\chapter1.txt
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   chapter1.txt
+
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git commit -m "INITIAL COMMIT"
+[main (root-commit) db69fb2] INITIAL COMMIT
+ 1 file changed, 1 insertion(+)
+ create mode 100644 chapter1.txt
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git log
+commit db69fb255a2a383b7892e7562bf8aabb88e0d1a9 (HEAD -> main)
+Author: INFINITEALEX <vikram.n1998@gmail.com>
+Date:   Mon Feb 12 17:17:33 2024 +0530
+
+    INITIAL COMMIT
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> code chapter2.txt
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> code chapter3.txt
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        chapter2.txt
+        chapter3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git add .                            
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   chapter2.txt
+        new file:   chapter3.txt
+
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git log
+commit db69fb255a2a383b7892e7562bf8aabb88e0d1a9 (HEAD -> main)
+Author: INFINITEALEX <vikram.n1998@gmail.com>
+Date:   Mon Feb 12 17:17:33 2024 +0530
+
+    INITIAL COMMIT
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   chapter2.txt
+        new file:   chapter3.txt
+
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git commit -m "chapter 2 and chapter3"
+[main 2e156f5] chapter 2 and chapter3
+ 2 files changed, 2 insertions(+)
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git log
+commit 2e156f5fcd1f1104b34a851873ac14476f9547f8 (HEAD -> main)
+Author: INFINITEALEX <vikram.n1998@gmail.com>
+Date:   Mon Feb 12 17:21:15 2024 +0530
+
+    chapter 2 and chapter3
+
+commit db69fb255a2a383b7892e7562bf8aabb88e0d1a9
+Author: INFINITEALEX <vikram.n1998@gmail.com>
+Date:   Mon Feb 12 17:17:33 2024 +0530
+
+    INITIAL COMMIT
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git diff .\chapter3.txt
+diff --git a/chapter3.txt b/chapter3.txt
+index 3c45d3a..860e5a0 100644
+--- a/chapter3.txt
++++ b/chapter3.txt
+@@ -1 +1 @@
+-hello boiss!!!
+\ No newline at end of file
++jkadssssssssfhasjdbvasjdbvvvvvvvvvvvvklajsbldvjcksadbnfjkasdfjksadkjfakjsfkjsdbvkhasdbvhasbdvkhasbndkjhasdfjkhasdkfjasdkfjlhasd
+\ No newline at end of file
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git checkout .\chapter3.txt 
+Updated 1 path from the index
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git remote add origin https://github.com/INFINITEALEX/Story.git
+PS C:\Users\VIKRAM N REDDY\Desktop\Story> git push  -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 563 bytes | 563.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/INFINITEALEX/Story.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\VIKRAM N REDDY\Desktop\Story>
+
+ git add .
+
+VIKRAM N REDDY@VNR MINGW64 ~/Desktop/Story (main)
+$ git commit -m "chapter3"
+[main 64ad031] chapter3
+ 1 file changed, 122 insertions(+), 1 deletion(-)
+
+VIKRAM N REDDY@VNR MINGW64 ~/Desktop/Story (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.39 KiB | 712.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/INFINITEALEX/Story.git
+   2e156f5..64ad031  main -> main
+branch 'main' set up to track 'origin/main'.
